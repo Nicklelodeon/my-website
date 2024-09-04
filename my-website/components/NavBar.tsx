@@ -1,36 +1,33 @@
-import Link from 'next/link';
-import { Button } from './Button';
-
+'use client'
+import { Box, Button, useColorMode } from '@chakra-ui/react';
+import { Click } from './Click';
+import { Clicks } from './constants';
 
 export const NavBar = () => {
-
-
+    const { colorMode, toggleColorMode } = useColorMode();
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                    Nicholas Cheong
-                </span>
-                <div
-                >
-                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
-                            <Button scrollId="top" content="Home" />
+        <Box
+        >
+            <nav className="hidden md:block">
+                <div className="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4">
+                    <span className="text-2xl font-semibold">
+                        Nicholas Cheong
+                    </span>
+                    <div className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                        <Button onClick={toggleColorMode}>
+                            Switch to {colorMode === 'light' ? 'Dark' : 'Light'} Mode
+                        </Button>
+                        <ul className='space-x-3 pt-2'>
+                            {Clicks.map(x => {
+                                return (
+                                    <Click {...x} />
+                                )
+                            })}
 
-                        </li>
-                        <li>
-                            <Button scrollId="aboutme" content="About Me" />
-                        </li>
-                        <li>
-                            <Button scrollId="experiences" content="Internship Experiences" />
-                        </li>
-                        <li>
-                            <Button scrollId="projects" content="Projects" />
-                        </li>
-
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </Box>
     );
 };

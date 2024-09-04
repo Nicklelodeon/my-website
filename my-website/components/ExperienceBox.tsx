@@ -1,35 +1,65 @@
-import { Card, CardHeader, CardBody, CardFooter, Stack, Button, Heading, Text, Image } from '@chakra-ui/react'
+import { Card, Kbd, CardBody, CardFooter, Stack, Button, Heading, Text, Image, Code, UnorderedList, ListItem, Divider } from '@chakra-ui/react'
+import Link from 'next/link';
+import React from 'react';
+import { ExperienceBoxProps } from './constants';
 
-export const ExperienceBox = () => {
+
+
+export const ExperienceBox: React.FC<ExperienceBoxProps> = ({ imgSrc,
+    alt,
+    imgLink,
+    company,
+    jobTitle,
+    techStack,
+    experience }) => {
     return (
-        <div className='p-6 '>
+        <div className="pb-6">
             <Card
                 direction={{ base: 'column', sm: 'row' }}
                 overflow='hidden'
                 variant='outline'
             >
-                <Image
-                    objectFit='cover'
-                    maxW={{ base: '100%', sm: '200px' }}
-                    src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
-                    alt='Caffe Latte'
-                />
 
+                <Link href={imgLink}>
+                    <Image
+                        boxSize="200px"
+                        objectFit="cover"
+                        borderRadius="md"
+                        minW="150px"
+                        src={imgSrc}
+                        alt={alt}
+                    />
+                </Link>
                 <Stack>
                     <CardBody>
-                        <Heading size='md'>The perfect latte</Heading>
+                        <Heading size='md'>{company}</Heading>
 
-                        <Text py='2'>
-                            Caffè latte is a coffee beverage of Italian origin made with espresso
-                            and steamed milk.
-                        </Text>
+                        <Code className="mt-2">
+                            {jobTitle}
+                        </Code>
+
+                        <div className="flex space-x-2 mt-2">
+                            <div className="flex flex-wrap justify-between gap-2">
+
+                                {techStack.map((x, idx) => {
+                                    return (
+                                        <Kbd className="px-2" key={idx}>
+                                            {x}
+                                        </Kbd>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                        <UnorderedList className='mt-2'>
+                            {experience.map((x, idx) => {
+                                return (
+                                    <ListItem key={idx}>
+                                        {x}
+                                    </ListItem>
+                                )
+                            })}
+                        </UnorderedList>
                     </CardBody>
-
-                    <CardFooter>
-                        <Button variant='solid' colorScheme='blue'>
-                            Buy Latte
-                        </Button>
-                    </CardFooter>
                 </Stack>
             </Card>
         </div>
