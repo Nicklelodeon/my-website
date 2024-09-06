@@ -1,21 +1,16 @@
-import { JobExperiences } from "./constants"
-import { ExperienceBox } from "./ExperienceBox"
-
+import { JobExperiences } from "./constants";
+import { ExperienceBox } from "./ExperienceBox";
 
 export const Experiences = () => {
-    return (
-        <div id="Experiences">
-            <div className="font-bold text-xl underline pb-4">
-                Internship Experiences
-            </div>
+  return (
+    <div id="Experiences">
+      <div className="font-bold text-xl underline pb-4">
+        Internship Experiences
+      </div>
 
-
-            {JobExperiences.map(x => {
-                return (
-                    <ExperienceBox
-                        {...x} />
-                )
-            })}
-        </div>
-    )
-}
+      {JobExperiences.map((job, idx) => {
+        return <ExperienceBox key={idx} {...job} />;
+      })}
+    </div>
+  );
+};

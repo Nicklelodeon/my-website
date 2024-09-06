@@ -25,7 +25,7 @@ export const ExperienceBox: React.FC<ExperienceBoxProps> = ({ imgSrc,
                         boxSize="200px"
                         objectFit="cover"
                         borderRadius="md"
-                        minW="150px"
+                        minW="200px"
                         src={imgSrc}
                         alt={alt}
                     />

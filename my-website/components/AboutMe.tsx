@@ -7,9 +7,9 @@ export const AboutMe = () => {
     return (
 
         <Box >
-            <section id="aboutme" className="flex items-center p-6">
+            <section id="AboutMe" className="flex items-center p-6">
                 <div className="flex-shrink-0">
-                    <img src="path/to/your-picture.jpg" alt="Your Name" className="w-32 h-32 object-cover rounded-full border-4 border-blue-500" />
+                    <img src="/images/image.jpeg" alt="Nicholas Cheong" className="w-32 h-32 object-cover rounded-full border-4 border-blue-500" />
                 </div>
                 <div className="ml-6">
                     <h2 className="text-2xl font-semibold">About Me</h2>

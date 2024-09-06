@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from "@chakra-ui/react";
 import { ClickProps } from "./constants";
 
 
@@ -11,11 +12,11 @@ export const Click:React.FC<ClickProps> = ({scrollId, content}) => {
         }
     };
     return (
-        <button onClick={() => scrollToElement(scrollId)}>
-            <div className="block py-2 px-3 md: px-0 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">
+        <Button onClick={() => scrollToElement(scrollId)}>
+            <div>
                 {content}
             </div>
-        </button>
+        </Button>
 
     )
 }

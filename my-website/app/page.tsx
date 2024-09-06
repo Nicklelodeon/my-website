@@ -18,12 +18,12 @@ export default function Home() {
 
         <NavBar />
         <MobileNavBar />
-        <Divider />
+        <Divider borderWidth="2px"/>
         <div className="p-6">
           <AboutMe />
-          <Divider />
+          <Divider borderWidth="2px"/>
           <Experiences />
-          <Divider />
+          <Divider borderWidth="2px"/>
           <Projects />
         </div>
       </ChakraProvider>
