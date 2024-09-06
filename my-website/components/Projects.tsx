@@ -1,10 +1,10 @@
 import { Box, Table, Tbody, Tr, Td } from "@chakra-ui/react";
 import { useBreakpointValue } from "@chakra-ui/media-query";
-import { ProjectExperiences } from "./constants";
+import { ProjectBoxProps, ProjectExperiences } from "./constants";
 import { ProjectBox } from "./ProjectBox";
 
+
 export const Projects = () => {
-  // Dynamically adjust the number of columns based on viewport size
   const columns = useBreakpointValue({ base: 1, sm: 2, md: 3, lg: 3 }) ?? 3;
 
 
