@@ -16,7 +16,7 @@ export const Projects = () => {
 
   return (
     <Box>
-      <div className="font-bold text-xl pt-4 pb-2" id="Projects">Personal Projects</div>
+      <div className="font-bold text-xl pt-4 pb-2" id="Projects">Projects</div>
 
       <Table variant="simple">
         <Tbody>

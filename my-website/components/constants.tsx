@@ -2,7 +2,6 @@ import { GoProjectRoadmap } from "react-icons/go";
 import { MdWorkOutline } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
-
 export type ExperienceBoxProps = {
   imgSrc: string;
   alt: string;
@@ -117,10 +116,10 @@ export const ProjectExperiences: ProjectBoxProps[] = [
   {
     imgSrc: "/images/WeightToGo.png",
     alt: "Backend image",
-    imgLink: "github",
-    projectName: "Weight To Go!",
+    imgLink: "https://github.com/Nicklelodeon/dsa3101-2310-11-ocr",
+    projectName: "Weigh To Go!",
     projectDescription:
-      "Weight To Go automates extraction of waste bin weight from pictures of dashboards through an optimised Character Recognition Model",
+      "Weigh To Go automates extraction of waste bin weight from pictures of dashboards through an optimised Character Recognition Model. (Repository is private due to user requirement)",
     techStack: [
       "Python",
       "Flask",
@@ -134,12 +133,29 @@ export const ProjectExperiences: ProjectBoxProps[] = [
     ],
   },
   {
+    imgSrc: "/images/Agrivision.png",
+    alt: "Backend image",
+    imgLink: "https://github.com/jovanwongzixi/AgriApp",
+    projectName: "AgriVision",
+    projectDescription:
+      "AgriVision provides a platform for researchers to manage their smart grow box and interact with other researchers.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Firebase Storage",
+      "PostgreSQL",
+      "Vercel",
+      "Docker",
+      "HiveMQ",
+    ],
+  },
+  {
     imgSrc: "/images/NinjaVan.png",
     alt: "Backend image",
     imgLink: "https://github.com/mcbebu/Ninja-Turtles",
     projectName: "Ninja-Chat!",
     projectDescription:
-      "Ninja Chat seeks to improve Ninja Van's existing chatbot through implementation of a reschuedule feature and integration of NLP model for sentiment analysis.",
+      "Ninja-Chat! seeks to improve Ninja Van's existing chatbot through implementation of a reschuedule feature and integration of NLP model for sentiment analysis.",
     techStack: [
       "Python",
       "Flask",
@@ -150,20 +166,19 @@ export const ProjectExperiences: ProjectBoxProps[] = [
     ],
   },
   {
-    imgSrc: "/images/Agrivision.png",
+    imgSrc: "/images/multiechelon.png",
     alt: "Backend image",
-    imgLink: "https://github.com/jovanwongzixi/AgriApp",
-    projectName: "AgriVision",
+    imgLink: "https://github.com/Nicklelodeon/Forecasters",
+    projectName: "Forecasters",
     projectDescription:
-      "AgriVision provides a platform for researchers to manage their smart grow box and interact with other researchers",
+      "Forecasters explores different single-objective optimization and deep learning methods that are commonly used, to derive optimal (s, S) policy for each actor in a multi-echelon supply chain model.",
     techStack: [
-      "Next.js",
-      "TypeScript",
-      "Firebase Storage",
-      "PostgreSQL",
-      "Vercel",
-      "Docker",
-      "HiveMQ",
+      "Python",
+      "PyTorch",
+      "Bayesian Optimisation",
+      "Deep Neural Networks",
+      "Genetic Algorithm",
+      "Reinforcement Learning",
     ],
   },
   {
@@ -176,6 +191,15 @@ export const ProjectExperiences: ProjectBoxProps[] = [
     techStack: ["Java", "JavaFX", "FXML", "Junit", "PlantUML", "GitHub"],
   },
   {
+    imgSrc: "/images/my-website.jpg",
+    alt: "Image",
+    imgLink: "https://github.com/Nicklelodeon/my-website",
+    projectName: "My Website",
+    projectDescription:
+      "My Website showcases my internship experiences and personal projects throughout university.",
+    techStack: ["Next.js", "Typescript", "Chakra UI", "Tailwind CSS"],
+  },
+  {
     imgSrc: "/images/Duke.png",
     alt: "Image",
     imgLink: "https://github.com/Nicklelodeon/ip",
@@ -184,41 +208,28 @@ export const ProjectExperiences: ProjectBoxProps[] = [
       "Duke is a chatbot tailored to help users keep track of tasks.",
     techStack: ["Java", "JavaFX", "JUnit", "GitHub"],
   },
-  {
-    imgSrc: "/images/image.jpeg",
-    alt: "Image",
-    imgLink: "https://github.com/Nicklelodeon/ip",
-    projectName: "My Website",
-    projectDescription:
-      "My Website showcases my internship experiences and personal projects throughout university",
-    techStack: ["Next.js", "Typescript", "Chakra UI", "Tailwind CSS"],
-  },
 ];
 
 export type ClickProps = {
   scrollId: string;
   content: string;
   icon?: HTMLDivElement;
-
 };
 
 export const Clicks = [
   {
     scrollId: "AboutMe",
     content: "About Me",
-    icon: <IoIosInformationCircleOutline />
-
+    icon: <IoIosInformationCircleOutline />,
   },
   {
     scrollId: "Experiences",
     content: "Experiences",
-    icon: <MdWorkOutline />
-
+    icon: <MdWorkOutline />,
   },
   {
     scrollId: "Projects",
     content: "Projects",
-    icon: <GoProjectRoadmap />
-
+    icon: <GoProjectRoadmap />,
   },
 ];
