@@ -11,12 +11,17 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { ClickProps, Clicks } from "./constants";
-import { FaMoon } from "react-icons/fa";
+import { FaGithub, FaMoon } from "react-icons/fa";
 import { GoSun } from "react-icons/go";
 import { MdOutlineExpandMore } from "react-icons/md";
+import { useRouter } from "next/navigation";
+import { BsLinkedin } from "react-icons/bs";
 
 export const MobileNavBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  const accessLink = (url: string) => {
+    window.open(url);
+  };
   const clickHandler = (scrollId: string) => {
     const element = document.getElementById(scrollId);
     if (element) {
@@ -40,6 +45,7 @@ export const MobileNavBar = () => {
             <MenuList>
               {Clicks.map((click, idx) => (
                 <MenuItem
+                  icon={click.icon}
                   key={idx}
                   onClick={() => {
                     return clickHandler(click.scrollId);
@@ -48,13 +54,30 @@ export const MobileNavBar = () => {
                   {click.content}
                 </MenuItem>
               ))}
-              <Tooltip label={`Switch to ${colorMode} mode`}>
-                <MenuItem onClick={toggleColorMode}>
-                  <div className="md:font-medium md:flex md:flex-col  md:border md:border-gray-100 md:rounded-lg  md:mt-0 md:border-0">
-                    {colorMode === "light" ? <FaMoon /> : <GoSun />}
-                  </div>
-                </MenuItem>
-              </Tooltip>
+              <MenuItem
+                icon={colorMode === "light" ? <FaMoon /> : <GoSun />}
+                onClick={toggleColorMode}
+              >
+                Switch to {colorMode === 'light' ? 'dark' : 'light'} mode
+              </MenuItem>
+              <MenuItem
+                icon={<BsLinkedin />}
+                onClick={() => {
+                  accessLink(
+                    "https://www.linkedin.com/in/nicholas-cheong-532a38206/"
+                  );
+                }}
+              >
+                Visit my Linkedin
+              </MenuItem>
+              <MenuItem
+                icon={<FaGithub />}
+                onClick={() => {
+                  accessLink("https://github.com/Nicklelodeon");
+                }}
+              >
+                Visit my Github
+              </MenuItem>
             </MenuList>
           </Menu>
         </div>

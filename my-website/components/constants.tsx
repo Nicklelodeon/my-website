@@ -1,3 +1,8 @@
+import { GoProjectRoadmap } from "react-icons/go";
+import { MdWorkOutline } from "react-icons/md";
+import { IoIosInformationCircleOutline } from "react-icons/io";
+
+
 export type ExperienceBoxProps = {
   imgSrc: string;
   alt: string;
@@ -193,20 +198,27 @@ export const ProjectExperiences: ProjectBoxProps[] = [
 export type ClickProps = {
   scrollId: string;
   content: string;
-  isMobile?: boolean;
+  icon?: HTMLDivElement;
+
 };
 
 export const Clicks = [
   {
     scrollId: "AboutMe",
     content: "About Me",
+    icon: <IoIosInformationCircleOutline />
+
   },
   {
     scrollId: "Experiences",
     content: "Experiences",
+    icon: <MdWorkOutline />
+
   },
   {
     scrollId: "Projects",
     content: "Projects",
+    icon: <GoProjectRoadmap />
+
   },
 ];
