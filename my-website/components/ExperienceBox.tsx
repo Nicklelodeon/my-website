@@ -20,7 +20,7 @@ export const ExperienceBox: React.FC<ExperienceBoxProps> = ({ imgSrc,
                 variant='outline'
             >
 
-                <Link href={imgLink}>
+                <Link href={imgLink} className='flex items-center justify-center min-h-[200px]'>
                     <Image
                         boxSize="200px"
                         objectFit="cover"
