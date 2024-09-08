@@ -32,7 +32,7 @@ export const JobExperiences: ExperienceBoxProps[] = [
     ],
     experience: [
       "Designed and implemented modular front-end components with Next.js, Tailwind CSS and shadcn-ui, focusing on reusability with minimal reconfiguration",
-      "Engineered scalable and cost-efficient back-end services with a serverless architecture utilizing AWS Lambda and Step Functions,",
+      "Engineered scalable and cost-efficient back-end services with a serverless architecture utilizing AWS Lambda and Step Functions",
       "Automated provisioning of Infrastructure as Code with Terraform, maintaining reproducibility and scalability of environments and resources",
       "Optimised front-end load times with server-side rendering and background fetching using Next.js and TanStack Query",
     ],
@@ -60,7 +60,7 @@ export const JobExperiences: ExperienceBoxProps[] = [
       "Established relational database along with stored procedures and triggers with Microsoft SQL Server",
       "Implemented Cron jobs with Quartz.NET to automate daily mass sending of thousands of emails",
       "Implemented CI CD workflows through NUnit testing framework with code coverage of more than 95%, and Azure DevOps pipeline for automated build and deployment of solution in less than 10 minutes",
-      "Utilised Tableau to visualise key report findings for business stakeholders]",
+      "Utilised Tableau to visualise key report findings for business stakeholders",
     ],
   },
   {
