@@ -32,8 +32,8 @@ export const JobExperiences: ExperienceBoxProps[] = [
     ],
     experience: [
       "Designed and implemented modular front-end components with Next.js, Tailwind CSS and shadcn-ui, focusing on reusability with minimal reconfiguration",
-      "Engineered back-end services with a serverless, microservices based architecture utilizing AWS Lambda and Step Functions, providing a scalable and cost-efficient backend server",
-      "Automated provisioning of IaC with Terraform, maintaining reproducibility and scalability of environment and resources",
+      "Engineered scalable and cost-efficient back-end services with a serverless architecture utilizing AWS Lambda and Step Functions,",
+      "Automated provisioning of Infrastructure as Code with Terraform, maintaining reproducibility and scalability of environments and resources",
       "Optimised front-end load times with server-side rendering and background fetching using Next.js and TanStack Query",
     ],
   },
