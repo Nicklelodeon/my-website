@@ -57,9 +57,9 @@ export const JobExperiences: ExperienceBoxProps[] = [
     ],
     experience: [
       "Developed 2 full-stack ASP.NET Core applications to serve thousands of internal and external users at low latency, utilizing C#, HTML, CSS, JQuery and KendoUI",
-      "Established relational database along with stored procedures and triggers with Microsoft SQL Server",
+      "Established relational database with indexing, stored procedures and triggers with Microsoft SQL Server",
       "Implemented Cron jobs with Quartz.NET to automate daily mass sending of thousands of emails",
-      "Implemented CI CD workflows through NUnit testing framework with code coverage of more than 95%, and Azure DevOps pipeline for automated build and deployment of solution in less than 10 minutes",
+      "Implemented CI CD workflows through NUnit testing framework with code coverage of more than 95%, and Azure DevOps pipeline for automated build, push and deployment of Docker images",
       "Utilised Tableau to visualise key report findings for business stakeholders",
     ],
   },
