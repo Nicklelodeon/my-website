@@ -34,7 +34,6 @@ export const JobExperiences: ExperienceBoxProps[] = [
       "Designed and implemented modular front-end components with Next.js, Tailwind CSS and shadcn-ui, focusing on reusability with minimal reconfiguration",
       "Engineered scalable and cost-efficient back-end services with a serverless architecture utilizing AWS Lambda and Step Functions",
       "Automated provisioning of Infrastructure as Code with Terraform, maintaining reproducibility and scalability of environments and resources",
-      "Optimised front-end load times with server-side rendering and background fetching using Next.js and TanStack Query",
     ],
   },
   {
@@ -114,6 +113,25 @@ export type ProjectBoxProps = {
 
 export const ProjectExperiences: ProjectBoxProps[] = [
   {
+    imgSrc: "/images/WeAreTheChampions.png",
+    alt: "Backend image",
+    imgLink: "https://github.com/Nicklelodeon/TAPAssignment",
+    projectName: "We Are The Champions!",
+    projectDescription:
+      "We Are The Champions is a web application designed to help users simulate the first round of a football competition through keeping track of Teams and Matches",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Chakra UI",
+      "Vercel Postgre",
+      "Prisma",
+      "Zod",
+      "Docker",
+      "AWS ECS",
+      "AWS ALB",
+    ],
+  },
+  {
     imgSrc: "/images/WeightToGo.png",
     alt: "Backend image",
     imgLink: "https://github.com/Nicklelodeon/dsa3101-2310-11-ocr",
@@ -133,6 +151,15 @@ export const ProjectExperiences: ProjectBoxProps[] = [
     ],
   },
   {
+    imgSrc: "/images/OfficeConnect.png",
+    alt: "Image",
+    imgLink: "https://ay2223s2-cs2103-f10-1.github.io/tp/",
+    projectName: "OfficeConnect",
+    projectDescription:
+      "OfficeConnect is a task management tool tailored to meet the needs of managers working in corporate settings.",
+    techStack: ["Java", "JavaFX", "FXML", "Junit", "PlantUML", "GitHub"],
+  },
+  {
     imgSrc: "/images/Agrivision.png",
     alt: "Backend image",
     imgLink: "https://github.com/jovanwongzixi/AgriApp",
@@ -150,20 +177,13 @@ export const ProjectExperiences: ProjectBoxProps[] = [
     ],
   },
   {
-    imgSrc: "/images/NinjaVan.png",
-    alt: "Backend image",
-    imgLink: "https://github.com/mcbebu/Ninja-Turtles",
-    projectName: "Ninja-Chat!",
+    imgSrc: "/images/website.png",
+    alt: "Image",
+    imgLink: "https://github.com/Nicklelodeon/my-website",
+    projectName: "My Website",
     projectDescription:
-      "Ninja-Chat! seeks to improve Ninja Van's existing chatbot through implementation of a reschuedule feature and integration of NLP model for sentiment analysis.",
-    techStack: [
-      "Python",
-      "Flask",
-      "Java",
-      "JavaFX",
-      "Spacey",
-      "Natural Language Processing",
-    ],
+      "My Website showcases my internship experiences and personal projects throughout university.",
+    techStack: ["Next.js", "Typescript", "Chakra UI", "Tailwind CSS"],
   },
   {
     imgSrc: "/images/multiechelon.png",
@@ -181,23 +201,22 @@ export const ProjectExperiences: ProjectBoxProps[] = [
       "Reinforcement Learning",
     ],
   },
+
   {
-    imgSrc: "/images/OfficeConnect.png",
-    alt: "Image",
-    imgLink: "https://ay2223s2-cs2103-f10-1.github.io/tp/",
-    projectName: "OfficeConnect",
+    imgSrc: "/images/NinjaVan.png",
+    alt: "Backend image",
+    imgLink: "https://github.com/mcbebu/Ninja-Turtles",
+    projectName: "Ninja-Turtle!",
     projectDescription:
-      "OfficeConnect is a task management tool tailored to meet the needs of managers working in corporate settings.",
-    techStack: ["Java", "JavaFX", "FXML", "Junit", "PlantUML", "GitHub"],
-  },
-  {
-    imgSrc: "/images/my-website.jpg",
-    alt: "Image",
-    imgLink: "https://github.com/Nicklelodeon/my-website",
-    projectName: "My Website",
-    projectDescription:
-      "My Website showcases my internship experiences and personal projects throughout university.",
-    techStack: ["Next.js", "Typescript", "Chakra UI", "Tailwind CSS"],
+      "Ninja-Turtle! seeks to improve Ninja Van's existing chatbot through implementation of a reschuedule feature and integration of NLP model for sentiment analysis.",
+    techStack: [
+      "Python",
+      "Flask",
+      "Java",
+      "JavaFX",
+      "Spacey",
+      "Natural Language Processing",
+    ],
   },
   {
     imgSrc: "/images/Duke.png",
