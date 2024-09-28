@@ -19,29 +19,29 @@ export const JobExperiences: ExperienceBoxProps[] = [
     imgLink:
       "https://www.tech.gov.sg/our-capabilities/data-science-and-artificial-intelligence/",
     company: "GovTech",
-    jobTitle: "Software Development Intern",
+    jobTitle: "Software Engineering Intern",
     techStack: [
       "Next.js",
       "TypeScript",
       "AWS Sagemaker",
       "AWS Lambda",
       "AWS Step Functions",
-      "AWS Terraform",
+      "AWS IAM",
+      "Terraform",
       "Tailwind CSS",
       "shadcn-UI",
     ],
     experience: [
-      "Designed and implemented modular front-end components with Next.js, Tailwind CSS and shadcn-ui, focusing on reusability with minimal reconfiguration",
+      "Designed and implemented modular front-end components with Next.js, Tailwind CSS and shadcn-ui, increasing code reusability and reducing development time of new features",
       "Engineered scalable and cost-efficient back-end services with a serverless architecture utilizing AWS Lambda and Step Functions",
-      "Automated provisioning of Infrastructure as Code with Terraform, maintaining reproducibility and scalability of environments and resources",
-    ],
+      "Automated provisioning of Infrastructure as Code with Terraform, maintaining reproducibility and scalability of environments and resources",    ],
   },
   {
     imgSrc: "/images/infineon.png",
     alt: "Infineon Image",
     imgLink: "https://www.infineon.com/",
     company: "Infineon",
-    jobTitle: "Software Development Intern",
+    jobTitle: "Software Engineering Intern",
     techStack: [
       "ASP.NET Core",
       "C#",
@@ -53,10 +53,11 @@ export const JobExperiences: ExperienceBoxProps[] = [
       "Quartz.NET",
       "NUnit",
       "Azure DevOps",
+      "Entity Framework Core"
     ],
     experience: [
       "Developed 2 full-stack ASP.NET Core applications to serve thousands of internal and external users at low latency, utilizing C#, HTML, CSS, JQuery and KendoUI",
-      "Established relational database with indexing, stored procedures and triggers with Microsoft SQL Server",
+      "Established relational database with Microsoft SQL Server, implemented non-clustered indexing with EF Core ORM to speed up query performance by 30%",
       "Implemented Cron jobs with Quartz.NET to automate daily mass sending of thousands of emails",
       "Implemented CI CD workflows through NUnit testing framework with code coverage of more than 95%, and Azure DevOps pipeline for automated build, push and deployment of Docker images",
       "Utilised Tableau to visualise key report findings for business stakeholders",
