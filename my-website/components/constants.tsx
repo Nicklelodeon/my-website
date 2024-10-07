@@ -34,7 +34,7 @@ export const JobExperiences: ExperienceBoxProps[] = [
     experience: [
       "Designed and implemented modular front-end components with Next.js, Tailwind CSS and shadcn-ui, increasing code reusability and reducing development time of new features",
       "Engineered scalable and cost-efficient back-end services with a serverless architecture utilizing AWS Lambda and Step Functions",
-      "Automated provisioning of Infrastructure as Code with Terraform, maintaining reproducibility and scalability of environments and resources",    ],
+      "Automated provisioning of Infrastructure as Code with Terraform, maintaining reproducibility and scalability of environments and resources",],
   },
   {
     imgSrc: "/images/infineon.png",
@@ -57,9 +57,9 @@ export const JobExperiences: ExperienceBoxProps[] = [
     ],
     experience: [
       "Developed 2 full-stack ASP.NET Core applications to serve thousands of internal and external users at low latency, utilizing C#, HTML, CSS, JQuery and KendoUI",
-      "Established relational database with Microsoft SQL Server, implemented non-clustered indexing with EF Core ORM to speed up query performance by 30%",
+      "Established relational database with Microsoft SQL Server, implemented non-clustered indexing with EF Core ORM",
       "Implemented Cron jobs with Quartz.NET to automate daily mass sending of thousands of emails",
-      "Implemented CI CD workflows through NUnit testing framework with code coverage of more than 95%, and Azure DevOps pipeline for automated build, push and deployment of Docker images",
+      "Implemented CI CD workflows through NUnit testing framework, and Azure DevOps pipeline for automated build, push and deployment of Docker images",
       "Utilised Tableau to visualise key report findings for business stakeholders",
     ],
   },
@@ -97,7 +97,7 @@ export const JobExperiences: ExperienceBoxProps[] = [
     ],
     experience: [
       "Built a multi-echelon inventory optimization model using Python and Object-Oriented programming concepts",
-      "Applied Meta-heuristic and Statistical optimization methods, as well as Deep Neural Networks and Reinforcement Learning in PyTorch to optimize multi-echelon supply chain models, contributing to an improvement in profit of 20% over baseline models",
+      "Applied Meta-heuristic and Statistical optimization methods, as well as Deep Neural Networks and Reinforcement Learning in PyTorch to optimize multi-echelon supply chain models",
       "Performed literature review and produced a comprehensive 40-page report detailing results of research findings",
     ],
   },
