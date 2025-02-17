@@ -22,10 +22,8 @@ Use Node Version Manager (NVM) to install Node.js (v22):
 - i. Go to [Node.js Download](https://nodejs.org/en/download/prebuilt-installer)  
 - ii. Download and Install
 
-## 2. *Create Next.js application**
+## 2. **Create Next.js application**
 
 ```sh
 npx create-next-app@latest
-
-
 
