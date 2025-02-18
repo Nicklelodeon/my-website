@@ -16,6 +16,7 @@ Use Node Version Manager (NVM) to install Node.js (v22):
   nvm use 22
   nvm alias default 22
   npm install npm --global # Upgrade npm to the latest version
+  ```
 
 - **Windows:**
 
@@ -24,6 +25,13 @@ Use Node Version Manager (NVM) to install Node.js (v22):
 
 ## 2. **Create Next.js application**
 
-```sh
-npx create-next-app@latest
+  ```sh
+  npx create-next-app@latest
+  ```
 
+## 3. **Run Next.js application**
+
+```sh
+cd app-name
+npm run dev
+```
