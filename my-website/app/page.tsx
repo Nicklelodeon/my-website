@@ -6,7 +6,7 @@ import { Experiences } from "@/components/Experiences";
 import { Projects } from "@/components/Projects";
 import { MobileNavBar } from "@/components/MobileNavBar";
 import theme from "@/components/Theme";
-
+import { FTExperiences } from "@/components/FT_Experiences";
 
 
 export default function Home() {
@@ -21,6 +21,8 @@ export default function Home() {
         <Divider borderWidth="2px"/>
         <div className="p-6">
           <AboutMe />
+          <Divider borderWidth="2px"/>
+          <FTExperiences />
           <Divider borderWidth="2px"/>
           <Experiences />
           <Divider borderWidth="2px"/>

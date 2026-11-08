@@ -12,6 +12,36 @@ export type ExperienceBoxProps = {
   experience: string[];
 };
 
+export const FTJobExperiences: ExperienceBoxProps[] = [
+  {
+    imgSrc: "/images/shopee.png",
+    alt: "Shopee Image",
+    imgLink:
+      "https://shopee.sg/",
+    company: "Shopee",
+    jobTitle: "Backend Engineer",
+    techStack: [
+      "Go",
+      "Python",
+      "Grafana",
+      "Prometheus",
+      "Kubernetes",
+      "Ray Serve",
+      "Redis",
+      "Elastic Search",
+      "Kafka",
+      "Langfuse"
+    ],
+    experience: [
+      "Implemented a graceful degradation mechanism for high-traffic campaign periods, improving system reliability and reducing error rates",
+      "Built an interactive prompt playground enabling users to iterate, evaluate and publish prompts",
+      "Maintained stability of a Ray Serve model hosting platform on Kubernetes through monitoring, alerting and root-cause debugging of production issues",
+      "Optimised a workflow orchestration platform to improve throughput and reduce latency, while extending support for new workflow node types",
+      "Optimised GPU-based model serving to increase throughput and reduce inference latency",
+    ],
+  },
+]
+
 export const JobExperiences: ExperienceBoxProps[] = [
   {
     imgSrc: "/images/govtech.png",

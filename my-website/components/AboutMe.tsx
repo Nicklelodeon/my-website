@@ -14,7 +14,7 @@ export const AboutMe = () => {
                 <div className="ml-6">
                     <h2 className="text-2xl font-semibold">About Me</h2>
                     <p className="mt-2 font-style: italic">
-                        Hello! I&apos;m Nicholas, a final year student in NUS! I am a passionate Software Engineer with experience in building full stack solutions leveraging on Machine Learning capabilities . I enjoy exercising and hunting for good food during my free time, and I&apos;m always excited to learn new things and take on new challenges. Feel free to connect with me to learn more about my work and experiences.
+                        Hello! I'm Nicholas, a Backend Engineer at Shopee! I am a passionate Software Engineer with experience in building production-grade systems, leveraging observability, multi-layer caching, concurrency control, and graceful degradation to improve system availability, reliability, and data consistency. I enjoy keeping up with the news and volunteering during my free time, and I'm always excited to learn new things and take on new challenges. Feel free to connect with me to learn more about my work and experiences.
                     </p>
                 </div>
             </section>
